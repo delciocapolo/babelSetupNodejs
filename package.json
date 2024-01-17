@@ -1,0 +1,33 @@
+{
+  "name": "babelsetupnodejs",
+  "version": "0.0.1",
+  "description": "Set up Babel in Nodejs, testing how is to use it.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "biuld": "babel src/index.js -d dist",
+    "start": "npm run biuld && node --env-file=.env dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delciocapolo/babelsetupnodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "babel",
+    "babeljs",
+    "javascript",
+    "js"
+  ],
+  "author": "Delcio Capolo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delciocapolo/babelsetupnodejs/issues"
+  },
+  "homepage": "https://github.com/delciocapolo/babelsetupnodejs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8"
+  }
+}
