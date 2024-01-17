@@ -1,14 +1,16 @@
 import http from 'http';
 
+const PORT = process.env.PORT;
+
 const handleServer = (req, res) => {
   if(req.url === '/') {
-    res.send("Hello from the server");
+    res.end("Hello from the server");
   }
 }
 
 const server = http.createServer(handleServer);
-server.listen(4001);
+server.listen(PORT);
 
-console.log('Server is up and running');
+console.log(`Server is up and running at port ${PORT}`);
 
 export default server;
